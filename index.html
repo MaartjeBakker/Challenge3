@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Your trip to Mars</title>
+		<link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" /> <!-- css voor kaart -->
+		<link rel="stylesheet" type="text/css" href="spacex.css">
+		 <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script> <!-- js voor kaart -->
+		<script src="spacex.js" defer></script>
+	</head>
+	<body>
+		<main class="container">
+			<div id="zoeken">
+				<!-- Zoekbalk voor stad die op de kaart wordt weergegeven -->
+				<h2>Search</h2>
+				<label for="city">City name:</label> <br>
+				<input type="text" name="city" id="city" />
+				<input type="button" class="button" id="getWeather" value="Show weather" />
+			</div>
+			<div id="gegevens">
+				<h2>The Weather</h2>
+				<div id="weer"></div>
+				<!-- temperatuur, gevoels temperatuur, bewolking, windsnelheid -->
+			</div>
+			<div id="wereldkaart">
+				<h2>Map</h2>
+				<div id="map"></div>
+			</div>
+		</main>
+	</body>
+</html>
